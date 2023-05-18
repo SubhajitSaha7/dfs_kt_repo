@@ -177,3 +177,80 @@
 2023-05-18T12:04:00.290+05:30  INFO 1924 --- [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-05-18T12:04:00.295+05:30  INFO 1924 --- [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-05-18T12:04:00.298+05:30  INFO 1924 --- [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-18T12:38:39.290+05:30  INFO 3124 --- [main] com.cg.BankApplication                   : Starting BankApplication using Java 17.0.6 with PID 3124 (C:\Users\ssaha6\Documents\workspace2-spring-tool-suite-4-4.18.0.RELEASE\BankApplication\bin\main started by ssaha6 in C:\Users\ssaha6\Documents\workspace2-spring-tool-suite-4-4.18.0.RELEASE\BankApplication)
+2023-05-18T12:38:39.298+05:30  INFO 3124 --- [main] com.cg.BankApplication                   : No active profile set, falling back to 1 default profile: "default"
+2023-05-18T12:38:40.742+05:30  INFO 3124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-05-18T12:38:40.746+05:30  INFO 3124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-05-18T12:38:40.788+05:30  INFO 3124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 0 JDBC repository interfaces.
+2023-05-18T12:38:40.801+05:30  INFO 3124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-05-18T12:38:40.803+05:30  INFO 3124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-18T12:38:40.820+05:30  INFO 3124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2023-05-18T12:38:41.604+05:30  INFO 3124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2023-05-18T12:38:41.619+05:30  INFO 3124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-18T12:38:41.619+05:30  INFO 3124 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-18T12:38:41.802+05:30  INFO 3124 --- [main] o.a.c.c.C.[.[localhost].[/bankapp]       : Initializing Spring embedded WebApplicationContext
+2023-05-18T12:38:41.803+05:30  INFO 3124 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2430 ms
+2023-05-18T12:38:41.945+05:30  INFO 3124 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-18T12:38:42.270+05:30  INFO 3124 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:dcbapp user=USER
+2023-05-18T12:38:42.273+05:30  INFO 3124 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-18T12:38:42.290+05:30  INFO 3124 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+2023-05-18T12:38:42.553+05:30  INFO 3124 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-18T12:38:42.640+05:30  INFO 3124 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-18T12:38:43.150+05:30  INFO 3124 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-18T12:38:43.636+05:30  INFO 3124 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-18T12:38:43.656+05:30  INFO 3124 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-18T12:38:43.820+05:30  WARN 3124 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-18T12:38:44.783+05:30  INFO 3124 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-18T12:38:44.938+05:30  INFO 3124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path '/bankapp'
+2023-05-18T12:38:44.967+05:30  INFO 3124 --- [main] com.cg.BankApplication                   : Started BankApplication in 6.401 seconds (process running for 9.806)
+2023-05-18T12:38:45.899+05:30  INFO 3124 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[.[localhost].[/bankapp]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-18T12:38:45.899+05:30  INFO 3124 --- [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-18T12:38:45.902+05:30  INFO 3124 --- [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-18T12:38:58.384+05:30  INFO 3124 --- [http-nio-8084-exec-1] c.c.b.controller.BankRestController      : Controller - getById()
+2023-05-18T12:38:58.385+05:30  INFO 3124 --- [http-nio-8084-exec-1] com.cg.bankapp.eo.BankEO                 : Service - findById()
+2023-05-18T12:38:58.386+05:30  INFO 3124 --- [http-nio-8084-exec-1] com.cg.bankapp.bo.BankBo                 : BO - findById()
+2023-05-18T12:38:58.388+05:30  INFO 3124 --- [http-nio-8084-exec-1] com.cg.bankapp.eo.BankEO                 : EO - findById()
+2023-05-18T12:38:58.391+05:30  INFO 3124 --- [http-nio-8084-exec-1] com.cg.bankapp.dao.JdbcBankRepo          : Dao - findById() - query
+2023-05-18T12:38:58.448+05:30  INFO 3124 --- [http-nio-8084-exec-1] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:03.800+05:30  INFO 3124 --- [http-nio-8084-exec-2] c.c.b.controller.BankRestController      : Controller - getAllAccounts()
+2023-05-18T12:39:03.800+05:30  INFO 3124 --- [http-nio-8084-exec-2] com.cg.bankapp.eo.BankEO                 : Service - findAllAccounts()
+2023-05-18T12:39:03.800+05:30  INFO 3124 --- [http-nio-8084-exec-2] com.cg.bankapp.bo.BankBo                 : BO - findAllAccounts()
+2023-05-18T12:39:03.800+05:30  INFO 3124 --- [http-nio-8084-exec-2] com.cg.bankapp.eo.BankEO                 : EO - findAll()
+2023-05-18T12:39:03.800+05:30  INFO 3124 --- [http-nio-8084-exec-2] com.cg.bankapp.dao.JdbcBankRepo          : Dao - findAll() - query
+2023-05-18T12:39:03.807+05:30  INFO 3124 --- [http-nio-8084-exec-2] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:03.807+05:30  INFO 3124 --- [http-nio-8084-exec-2] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:03.807+05:30  INFO 3124 --- [http-nio-8084-exec-2] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:03.807+05:30  INFO 3124 --- [http-nio-8084-exec-2] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:03.807+05:30  INFO 3124 --- [http-nio-8084-exec-2] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:03.813+05:30  INFO 3124 --- [http-nio-8084-exec-2] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:03.813+05:30  INFO 3124 --- [http-nio-8084-exec-2] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:03.813+05:30  INFO 3124 --- [http-nio-8084-exec-2] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:03.813+05:30  INFO 3124 --- [http-nio-8084-exec-2] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:03.813+05:30  INFO 3124 --- [http-nio-8084-exec-2] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:07.743+05:30  INFO 3124 --- [http-nio-8084-exec-3] c.c.b.controller.BankRestController      : Controller - getAllAccounts()
+2023-05-18T12:39:07.747+05:30  INFO 3124 --- [http-nio-8084-exec-3] com.cg.bankapp.eo.BankEO                 : Service - findAllAccounts()
+2023-05-18T12:39:07.747+05:30  INFO 3124 --- [http-nio-8084-exec-3] com.cg.bankapp.bo.BankBo                 : BO - findAllAccounts()
+2023-05-18T12:39:07.747+05:30  INFO 3124 --- [http-nio-8084-exec-3] com.cg.bankapp.eo.BankEO                 : EO - findAll()
+2023-05-18T12:39:07.747+05:30  INFO 3124 --- [http-nio-8084-exec-3] com.cg.bankapp.dao.JdbcBankRepo          : Dao - findAll() - query
+2023-05-18T12:39:07.755+05:30  INFO 3124 --- [http-nio-8084-exec-3] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:07.755+05:30  INFO 3124 --- [http-nio-8084-exec-3] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:07.755+05:30  INFO 3124 --- [http-nio-8084-exec-3] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:07.755+05:30  INFO 3124 --- [http-nio-8084-exec-3] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:07.755+05:30  INFO 3124 --- [http-nio-8084-exec-3] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:07.755+05:30  INFO 3124 --- [http-nio-8084-exec-3] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:07.755+05:30  INFO 3124 --- [http-nio-8084-exec-3] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:07.755+05:30  INFO 3124 --- [http-nio-8084-exec-3] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:07.755+05:30  INFO 3124 --- [http-nio-8084-exec-3] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:07.755+05:30  INFO 3124 --- [http-nio-8084-exec-3] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:11.997+05:30  INFO 3124 --- [http-nio-8084-exec-4] c.c.b.controller.BankRestController      : Controller - getById()
+2023-05-18T12:39:11.997+05:30  INFO 3124 --- [http-nio-8084-exec-4] com.cg.bankapp.eo.BankEO                 : Service - findById()
+2023-05-18T12:39:11.997+05:30  INFO 3124 --- [http-nio-8084-exec-4] com.cg.bankapp.bo.BankBo                 : BO - findById()
+2023-05-18T12:39:11.997+05:30  INFO 3124 --- [http-nio-8084-exec-4] com.cg.bankapp.eo.BankEO                 : EO - findById()
+2023-05-18T12:39:11.997+05:30  INFO 3124 --- [http-nio-8084-exec-4] com.cg.bankapp.dao.JdbcBankRepo          : Dao - findById() - query
+2023-05-18T12:39:11.997+05:30  INFO 3124 --- [http-nio-8084-exec-4] com.cg.bankapp.mapper.BankMapperImpl     : MapperIMPL - dtoToVo()
+2023-05-18T12:39:24.137+05:30  INFO 3124 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-05-18T12:39:24.168+05:30  INFO 3124 --- [RMI TCP Connection(13)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-18T12:39:24.170+05:30  INFO 3124 --- [RMI TCP Connection(13)-127.0.0.1] o.a.c.c.C.[.[localhost].[/bankapp]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-18T12:39:24.185+05:30  INFO 3124 --- [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-18T12:39:24.190+05:30  INFO 3124 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-18T12:39:24.194+05:30  INFO 3124 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

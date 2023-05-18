@@ -51,3 +51,56 @@
 2023-05-18T12:04:02.507+05:30  INFO 15084 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-05-18T12:04:02.511+05:30  INFO 15084 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-05-18T12:04:02.515+05:30  INFO 15084 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-18T12:38:45.081+05:30  INFO 10004 --- [main] com.cg.BankApplication2Application       : Starting BankApplication2Application using Java 17.0.6 with PID 10004 (C:\Users\ssaha6\Documents\workspace2-spring-tool-suite-4-4.18.0.RELEASE\BankApplication2\bin\main started by ssaha6 in C:\Users\ssaha6\Documents\workspace2-spring-tool-suite-4-4.18.0.RELEASE\BankApplication2)
+2023-05-18T12:38:45.087+05:30  INFO 10004 --- [main] com.cg.BankApplication2Application       : No active profile set, falling back to 1 default profile: "default"
+2023-05-18T12:38:46.209+05:30  INFO 10004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-05-18T12:38:46.211+05:30  INFO 10004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-05-18T12:38:46.245+05:30  INFO 10004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 0 JDBC repository interfaces.
+2023-05-18T12:38:46.261+05:30  INFO 10004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-05-18T12:38:46.263+05:30  INFO 10004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-18T12:38:46.280+05:30  INFO 10004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2023-05-18T12:38:46.541+05:30  INFO 10004 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c20caf63-dc7f-3c53-825d-56dd9f7360da
+2023-05-18T12:38:46.632+05:30  INFO 10004 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.cg.bankapp2.feign.IFeignClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-18T12:38:47.069+05:30  INFO 10004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-05-18T12:38:47.083+05:30  INFO 10004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-18T12:38:47.083+05:30  INFO 10004 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-18T12:38:47.261+05:30  INFO 10004 --- [main] o.a.c.c.C.[.[localhost].[/bankapp2]      : Initializing Spring embedded WebApplicationContext
+2023-05-18T12:38:47.262+05:30  INFO 10004 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2089 ms
+2023-05-18T12:38:47.448+05:30  INFO 10004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-18T12:38:47.766+05:30  INFO 10004 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:09a38503-285b-40e3-a64e-de0e4e13a540 user=SA
+2023-05-18T12:38:47.770+05:30  INFO 10004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-18T12:38:47.843+05:30  INFO 10004 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-18T12:38:47.930+05:30  INFO 10004 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-18T12:38:48.435+05:30  INFO 10004 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-18T12:38:48.877+05:30  INFO 10004 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-18T12:38:48.893+05:30  INFO 10004 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-18T12:38:49.166+05:30  WARN 10004 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-18T12:38:50.177+05:30  INFO 10004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path '/bankapp2'
+2023-05-18T12:38:50.416+05:30  INFO 10004 --- [main] com.cg.BankApplication2Application       : Started BankApplication2Application in 6.394 seconds (process running for 9.757)
+2023-05-18T12:38:57.911+05:30  INFO 10004 --- [http-nio-8086-exec-1] o.a.c.c.C.[.[localhost].[/bankapp2]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-18T12:38:57.912+05:30  INFO 10004 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-18T12:38:57.914+05:30  INFO 10004 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-18T12:38:58.064+05:30  INFO 10004 --- [http-nio-8086-exec-1] c.c.b.controller.BankRestController      : FeignClientController - getById()
+2023-05-18T12:38:58.064+05:30  INFO 10004 --- [http-nio-8086-exec-1] com.cg.bankapp2.eo.BankEO                : Service - findByIdByFC()
+2023-05-18T12:38:58.064+05:30  INFO 10004 --- [http-nio-8086-exec-1] com.cg.bankapp2.bo.BankBo                : BO - findByIdByFC()
+2023-05-18T12:38:58.064+05:30  INFO 10004 --- [http-nio-8086-exec-1] com.cg.bankapp2.eo.BankEO                : EO - findByIdByFC() - calling IFeignClient API
+2023-05-18T12:39:03.797+05:30  INFO 10004 --- [http-nio-8086-exec-3] c.c.b.controller.BankRestController      : FeignClientController - getAllAccounts()
+2023-05-18T12:39:03.797+05:30  INFO 10004 --- [http-nio-8086-exec-3] com.cg.bankapp2.eo.BankEO                : Service - findAllByFC()
+2023-05-18T12:39:03.797+05:30  INFO 10004 --- [http-nio-8086-exec-3] com.cg.bankapp2.bo.BankBo                : BO - findAllByFC()
+2023-05-18T12:39:03.797+05:30  INFO 10004 --- [http-nio-8086-exec-3] com.cg.bankapp2.eo.BankEO                : EO - findAllByFC() - calling IFeignClient API
+2023-05-18T12:39:07.682+05:30  INFO 10004 --- [http-nio-8086-exec-4] c.c.b.controller.BankRestController      : Controller - getAllAccounts()
+2023-05-18T12:39:07.682+05:30  INFO 10004 --- [http-nio-8086-exec-4] com.cg.bankapp2.eo.BankEO                : Service - findAllAccounts()
+2023-05-18T12:39:07.682+05:30  INFO 10004 --- [http-nio-8086-exec-4] com.cg.bankapp2.bo.BankBo                : BO - findAllAccounts()
+2023-05-18T12:39:07.682+05:30  INFO 10004 --- [http-nio-8086-exec-4] com.cg.bankapp2.eo.BankEO                : EO - findAll()
+2023-05-18T12:39:07.682+05:30  INFO 10004 --- [http-nio-8086-exec-4] com.cg.bankapp2.eo.BankEO                : RestTemplate - findAll() - URL
+2023-05-18T12:39:11.986+05:30  INFO 10004 --- [http-nio-8086-exec-5] c.c.b.controller.BankRestController      : Controller - getById()
+2023-05-18T12:39:11.986+05:30  INFO 10004 --- [http-nio-8086-exec-5] com.cg.bankapp2.eo.BankEO                : Service - findById()
+2023-05-18T12:39:11.986+05:30  INFO 10004 --- [http-nio-8086-exec-5] com.cg.bankapp2.bo.BankBo                : BO - findById()
+2023-05-18T12:39:11.986+05:30  INFO 10004 --- [http-nio-8086-exec-5] com.cg.bankapp2.eo.BankEO                : EO - findById()
+2023-05-18T12:39:11.986+05:30  INFO 10004 --- [http-nio-8086-exec-5] com.cg.bankapp2.eo.BankEO                : RestTemplate - findById() - URL
+2023-05-18T12:39:18.918+05:30  INFO 10004 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-05-18T12:39:18.943+05:30  INFO 10004 --- [RMI TCP Connection(10)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-18T12:39:18.943+05:30  INFO 10004 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[.[localhost].[/bankapp2]      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-18T12:39:18.955+05:30  INFO 10004 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-18T12:39:18.955+05:30  INFO 10004 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-18T12:39:18.955+05:30  INFO 10004 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
