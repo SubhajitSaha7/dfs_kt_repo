@@ -21,7 +21,6 @@ public class BankRestController {
 	
 	private static final Logger log = LoggerFactory.getLogger(BankRestController.class);
 	
-	
 	@GetMapping("accounts")
 	public List<BankAccountDto> getAllAccounts() throws AccountNotFoundException {
 		log.info("Controller - getAllAccounts()");
