@@ -300,3 +300,38 @@
 2023-05-22T12:12:01.054+05:30  INFO 24920 --- [RMI TCP Connection(123)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-05-22T12:12:01.065+05:30  INFO 24920 --- [RMI TCP Connection(123)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-05-22T12:12:01.069+05:30  INFO 24920 --- [RMI TCP Connection(123)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-22T15:45:57.811+05:30  INFO 21252 --- [main] com.cg.BankApplication                   : Starting BankApplication using Java 17.0.6 with PID 21252 (C:\Users\ssaha6\Documents\workspace2-spring-tool-suite-4-4.18.0.RELEASE\BankApplication\bin\main started by ssaha6 in C:\Users\ssaha6\Documents\workspace2-spring-tool-suite-4-4.18.0.RELEASE\BankApplication)
+2023-05-22T15:45:57.815+05:30  INFO 21252 --- [main] com.cg.BankApplication                   : No active profile set, falling back to 1 default profile: "default"
+2023-05-22T15:45:58.671+05:30  INFO 21252 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-05-22T15:45:58.672+05:30  INFO 21252 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-05-22T15:45:58.694+05:30  INFO 21252 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2023-05-22T15:45:58.703+05:30  INFO 21252 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-05-22T15:45:58.704+05:30  INFO 21252 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-22T15:45:58.712+05:30  INFO 21252 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2023-05-22T15:45:58.856+05:30  INFO 21252 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7b3c670f-ae1a-3eb5-bb2e-ab6a18adef6c
+2023-05-22T15:45:59.229+05:30  INFO 21252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2023-05-22T15:45:59.239+05:30  INFO 21252 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-22T15:45:59.240+05:30  INFO 21252 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-22T15:45:59.339+05:30  INFO 21252 --- [main] o.a.c.c.C.[.[localhost].[/bankapp]       : Initializing Spring embedded WebApplicationContext
+2023-05-22T15:45:59.339+05:30  INFO 21252 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1469 ms
+2023-05-22T15:45:59.418+05:30  INFO 21252 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-22T15:45:59.679+05:30  INFO 21252 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:dcbapp user=USER
+2023-05-22T15:45:59.682+05:30  INFO 21252 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-22T15:45:59.694+05:30  INFO 21252 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+2023-05-22T15:45:59.865+05:30  INFO 21252 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-22T15:45:59.927+05:30  INFO 21252 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-22T15:46:00.241+05:30  INFO 21252 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-22T15:46:00.527+05:30  INFO 21252 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-22T15:46:00.539+05:30  INFO 21252 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-22T15:46:00.633+05:30  WARN 21252 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-22T15:46:01.304+05:30  INFO 21252 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-22T15:46:01.397+05:30  INFO 21252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path '/bankapp'
+2023-05-22T15:46:01.511+05:30  INFO 21252 --- [main] com.cg.BankApplication                   : Started BankApplication in 4.439 seconds (process running for 6.32)
+2023-05-22T15:46:02.474+05:30  INFO 21252 --- [RMI TCP Connection(11)-127.0.0.1] o.a.c.c.C.[.[localhost].[/bankapp]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-22T15:46:02.475+05:30  INFO 21252 --- [RMI TCP Connection(11)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-22T15:46:02.476+05:30  INFO 21252 --- [RMI TCP Connection(11)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-22T15:46:27.014+05:30  INFO 21252 --- [http-nio-8084-exec-1] c.c.b.controller.BankRestController      : Controller - getById()
+2023-05-22T15:48:27.357+05:30  INFO 21252 --- [http-nio-8084-exec-1] com.cg.bankapp.eo.BankEO                 : Service - findById()
+2023-05-22T15:48:33.092+05:30  INFO 21252 --- [http-nio-8084-exec-1] com.cg.bankapp.bo.BankBo                 : BO - findById()
+2023-05-22T15:48:33.098+05:30  INFO 21252 --- [http-nio-8084-exec-1] com.cg.bankapp.eo.BankEO                 : EO - findById()
+2023-05-22T15:48:33.159+05:30  INFO 21252 --- [http-nio-8084-exec-1] com.cg.bankapp.dao.JdbcBankRepo          : Dao - findById() - query
