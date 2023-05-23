@@ -5,6 +5,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
 import com.cg.bankapp2.bo.IBankBo;
@@ -27,7 +28,7 @@ public class BankServiceImpl implements IBankService{
 	}
 
 	@Override
-	public BankAccountDto findById(Integer id) throws AccountNotFoundException {
+	public ResponseEntity<BankAccountDto> findById(Integer id) throws AccountNotFoundException {
 		log.info("Service - findById()");
 		return bo.findById(id);
 	}
@@ -43,4 +44,5 @@ public class BankServiceImpl implements IBankService{
 		log.info("Service - findAllByFC()");
 		return bo.findAllByFC();
 	}
+
 }

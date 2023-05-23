@@ -34,6 +34,16 @@ public class BankAccountDto{
 			log.info("BankAccountDTO");
 		}
 
+		public BankAccountDto(Integer accountNumber, Integer ifscCode, String customerName, Integer phoneNumber,
+				String city) {
+			super();
+			this.accountNumber = accountNumber;
+			this.ifscCode = ifscCode;
+			this.customerName = customerName;
+			this.phoneNumber = phoneNumber;
+			this.city = city;
+		}
+
 		public Integer getCustId() {
 			return custId;
 		}

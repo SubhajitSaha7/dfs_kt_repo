@@ -2,12 +2,14 @@ package com.cg.bankapp2.service;
 
 import java.util.List;
 
+import org.springframework.http.ResponseEntity;
+
 import com.cg.bankapp2.dto.BankAccountDto;
 import com.cg.bankapp2.exceptions.AccountNotFoundException;
 
 public interface IBankService{
 
-	BankAccountDto findById(Integer id) throws AccountNotFoundException;
+	ResponseEntity<BankAccountDto> findById(Integer id) throws AccountNotFoundException;
 
 	List<BankAccountDto> findAllAccounts() throws AccountNotFoundException;
 	

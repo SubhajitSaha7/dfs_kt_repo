@@ -5,6 +5,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
 import com.cg.bankapp2.dto.BankAccountDto;
@@ -29,7 +30,7 @@ public class BankEO implements IBankEO{
 	}
 
 	@Override
-	public BankAccountDto findById(Integer id) {
+	public ResponseEntity<BankAccountDto> findById(Integer id) {
 		log.info("EO - findById()");
 		return restTemplate.findById(id);
 	}

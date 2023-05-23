@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.IncorrectResultSizeDataAccessException;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.cg.bankapp2.dto.BankAccountDto;
@@ -33,10 +34,10 @@ public class BankBo implements IBankBo{
 	}
 	
 	@Override
-	public BankAccountDto findById(Integer id) throws AccountNotFoundException {
+	public ResponseEntity<BankAccountDto> findById(Integer id) throws AccountNotFoundException {
 		log.info("BO - findById()");
 		try {
-			BankAccountDto dto =  bankeo.findById(id);
+			ResponseEntity<BankAccountDto> dto =  bankeo.findById(id);
 			return dto;
 		}catch (IncorrectResultSizeDataAccessException e) {
 			return null;
@@ -54,5 +55,6 @@ public class BankBo implements IBankBo{
 		log.info("BO - findAllByFC()");
 		return bankeo.findAllByFC();
 	}
+
 
 }

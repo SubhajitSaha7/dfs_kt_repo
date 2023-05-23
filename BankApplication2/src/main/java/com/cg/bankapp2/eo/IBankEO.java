@@ -2,11 +2,13 @@ package com.cg.bankapp2.eo;
 
 import java.util.List;
 
+import org.springframework.http.ResponseEntity;
+
 import com.cg.bankapp2.dto.BankAccountDto;
 
 public interface IBankEO {
 
-	BankAccountDto findById(Integer id);
+	ResponseEntity<BankAccountDto> findById(Integer id);
 	List<BankAccountDto> findAll();
 	
 	BankAccountDto findByIdByFC(Integer id);
