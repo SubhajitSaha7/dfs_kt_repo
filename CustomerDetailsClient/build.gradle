@@ -1,0 +1,30 @@
+plugins {
+	id 'java'
+	id 'war'
+	id 'org.springframework.boot' version '3.0.8-SNAPSHOT'
+	id 'io.spring.dependency-management' version '1.1.0'
+}
+
+group = 'com.cg'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+	mavenCentral()
+	maven { url 'https://repo.spring.io/milestone' }
+	maven { url 'https://repo.spring.io/snapshot' }
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.11'
+	testImplementation 'com.github.tomakehurst:wiremock:3.0.0-beta-8'
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0-M1'
+	testImplementation 'junit:junit:4.13.2'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

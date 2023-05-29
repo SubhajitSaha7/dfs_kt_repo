@@ -47,4 +47,5 @@ public class BankEO implements IBankEO{
 		return feignClient.findAllAccountsByFC();
 	}
 
+	
 }

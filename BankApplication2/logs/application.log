@@ -1860,3 +1860,35 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'ba
 2023-05-23T15:36:04.204+05:30  INFO 19576 --- [http-nio-8086-exec-6] com.cg.bankapp2.eo.BankEO                : EO - findById()
 2023-05-23T15:36:04.204+05:30  INFO 19576 --- [http-nio-8086-exec-6] com.cg.bankapp2.eo.BankEO                : RestTemplate - findById() - URL
 2023-05-23T15:36:04.209+05:30  INFO 19576 --- [http-nio-8086-exec-6] c.c.b.controller.BankRestController      : Fallback method
+2023-05-23T19:03:53.025+05:30  WARN 19576 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h25m42s162ms702µs200ns).
+2023-05-23T19:05:49.079+05:30  INFO 19576 --- [http-nio-8086-exec-2] c.c.b.controller.BankRestController      : Controller - getById()
+2023-05-23T19:05:49.079+05:30  INFO 19576 --- [http-nio-8086-exec-2] com.cg.bankapp2.eo.BankEO                : Service - findById()
+2023-05-23T19:05:49.079+05:30  INFO 19576 --- [http-nio-8086-exec-2] com.cg.bankapp2.bo.BankBo                : BO - findById()
+2023-05-23T19:05:49.079+05:30  INFO 19576 --- [http-nio-8086-exec-2] com.cg.bankapp2.eo.BankEO                : EO - findById()
+2023-05-23T19:05:49.079+05:30  INFO 19576 --- [http-nio-8086-exec-2] com.cg.bankapp2.eo.BankEO                : RestTemplate - findById() - URL
+2023-05-23T19:05:49.093+05:30  INFO 19576 --- [http-nio-8086-exec-2] c.c.b.controller.BankRestController      : Fallback method
+2023-05-23T19:05:58.758+05:30  INFO 19576 --- [http-nio-8086-exec-1] c.c.b.controller.BankRestController      : Controller - getById()
+2023-05-23T19:05:58.758+05:30  INFO 19576 --- [http-nio-8086-exec-1] com.cg.bankapp2.eo.BankEO                : Service - findById()
+2023-05-23T19:05:58.759+05:30  INFO 19576 --- [http-nio-8086-exec-1] com.cg.bankapp2.bo.BankBo                : BO - findById()
+2023-05-23T19:05:58.759+05:30  INFO 19576 --- [http-nio-8086-exec-1] com.cg.bankapp2.eo.BankEO                : EO - findById()
+2023-05-23T19:05:58.759+05:30  INFO 19576 --- [http-nio-8086-exec-1] com.cg.bankapp2.eo.BankEO                : RestTemplate - findById() - URL
+2023-05-23T19:05:58.799+05:30  INFO 19576 --- [http-nio-8086-exec-1] c.c.b.controller.BankRestController      : Fallback method
+2023-05-23T19:06:13.759+05:30  INFO 19576 --- [RMI TCP Connection(76)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-05-23T19:06:13.788+05:30  INFO 19576 --- [RMI TCP Connection(76)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-23T19:06:13.791+05:30  INFO 19576 --- [RMI TCP Connection(76)-127.0.0.1] o.a.c.c.C.[.[localhost].[/bankapp2]      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-23T19:06:13.791+05:30  WARN 19576 --- [RMI TCP Connection(76)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [bankapp2] appears to have started a thread named [CircuitBreakerAutoTransitionThread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.6/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.6/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.6/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.6/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.6/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+2023-05-23T19:06:13.823+05:30  INFO 19576 --- [RMI TCP Connection(76)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-23T19:06:13.823+05:30  INFO 19576 --- [RMI TCP Connection(76)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-23T19:06:13.835+05:30  INFO 19576 --- [RMI TCP Connection(76)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
