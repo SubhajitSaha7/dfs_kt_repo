@@ -31,8 +31,6 @@ public class GetAllAccountsStep {
 		RestAssured.baseURI=url;
 		RequestSpecification requestSpecification = RestAssured.given();
 		respone=requestSpecification.when().get(new URI(url));
-		
-		
 	}
 	
 	@Then("Response is 200")
@@ -40,5 +38,4 @@ public class GetAllAccountsStep {
 		int actualResponseCode = respone.then().extract().statusCode();
 		assertEquals(statusCode, actualResponseCode+"");
 	}
-
 }
